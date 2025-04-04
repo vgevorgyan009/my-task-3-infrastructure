@@ -102,7 +102,7 @@ module "helm" {
   secrets_irsa_arn = module.IRSA.secrets_role_arn
   dns_irsa_arn     = module.IRSA.dns_role_arn
 }
-/*
+
 module "kubernetes" {
   source             = "./my-modules/kubernetes_module"
   eks_cluster_name   = "myapp-eks-cluster"
@@ -111,4 +111,3 @@ module "kubernetes" {
   github_token       = var.github_token
   rds_endpoint       = module.RDS_DB.db_endpoint
 }
-*/
