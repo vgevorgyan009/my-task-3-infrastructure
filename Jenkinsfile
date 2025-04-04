@@ -14,7 +14,7 @@ pipeline {
                     sh "terraform init"
                     sh "terraform apply -target=module.myapp-vpc -target=module.helm -target=module.RDS_DB -target=module.IRSA --auto-approve"
                     sh "terraform apply --auto-approve"
-                    sh "terraform destroy --auto-approve"
+//                    sh "terraform destroy --auto-approve"
             }
         }
     }
